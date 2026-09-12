@@ -4,29 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Zoha Hassan | Virtual Assistant & Digital Marketing Professional</title>
+  <title>Zoha Hassan | Virtual Assistant, Digital Marketing & Web Services</title>
 
-  <meta name="description" content="Zoha Hassan provides reliable remote support, digital marketing, social media management, data entry, graphic design, video editing, SEO, content creation and web development services.">
+  <meta name="description" content="Zoha Hassan provides professional remote virtual assistance, data entry and Excel support, social media management, Gmail management, WordPress, web development, video editing, SEO, poster design, customer support and online research services.">
 
+  <meta name="keywords" content="Zoha Hassan, Virtual Assistant, Data Entry, Excel, Social Media Management, Gmail Management, WordPress, Web Development, Video Editing, SEO, Poster Design, Customer Support, Online Research, Remote Work">
+
+  <meta name="author" content="Zoha Hassan">
   <meta name="robots" content="index, follow">
+
   <link rel="canonical" href="https://zohahassan.com/">
 
+  <meta property="og:title" content="Zoha Hassan | Digital & Creative Services Professional">
+  <meta property="og:description" content="Professional remote support, digital marketing, creative services and web development.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zohahassan.com/">
+
+  <meta name="theme-color" content="#101c2c">
+
   <style>
+
+    :root {
+      --navy: #101c2c;
+      --navy2: #18283c;
+      --gold: #c79a3b;
+      --gold-light: #f3e4bd;
+      --cream: #faf8f2;
+      --white: #ffffff;
+      --text: #1d2733;
+      --muted: #66717d;
+      --border: #e5e7eb;
+      --success: #2e8b57;
+      --shadow: 0 18px 50px rgba(16, 28, 44, 0.10);
+      --radius: 18px;
+      --max: 1180px;
+    }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-    }
-
-    html {
       scroll-behavior: smooth;
     }
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: #172033;
-      background: #ffffff;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.7;
     }
 
     a {
@@ -34,586 +59,2733 @@
       color: inherit;
     }
 
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
     .container {
-      width: min(1120px, 92%);
+      width: min(92%, var(--max));
       margin: auto;
     }
 
+    /* ================= HEADER ================= */
+
     header {
-      background: #ffffff;
-      border-bottom: 1px solid #e9edf3;
       position: sticky;
       top: 0;
       z-index: 1000;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
     }
 
-    .navbar {
-      min-height: 72px;
+    .nav {
+      min-height: 76px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 25px;
+      gap: 20px;
     }
 
     .logo {
-      font-size: 24px;
-      font-weight: 800;
-      letter-spacing: -0.5px;
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: -0.7px;
+      color: var(--navy);
+    }
+
+    .logo span {
+      color: var(--gold);
     }
 
     .nav-links {
       display: flex;
-      gap: 24px;
       align-items: center;
-      font-size: 15px;
-      font-weight: 600;
+      gap: 25px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--navy2);
+      transition: 0.3s;
     }
 
     .nav-links a:hover {
-      opacity: 0.65;
+      color: var(--gold);
     }
 
-    .hero {
-      padding: 95px 0 85px;
-      background: #f6f8fb;
-    }
-
-    .hero-content {
-      max-width: 850px;
-    }
-
-    .availability {
-      display: inline-block;
-      padding: 8px 14px;
+    .nav-contact {
+      background: var(--navy);
+      color: white !important;
+      padding: 10px 17px;
       border-radius: 30px;
-      background: #e9f7ef;
-      color: #176b42;
-      font-size: 14px;
-      font-weight: 700;
-      margin-bottom: 22px;
     }
 
-    .hero h1 {
-      font-size: clamp(42px, 7vw, 72px);
-      line-height: 1.05;
-      letter-spacing: -2px;
-      margin-bottom: 22px;
-    }
-
-    .hero h1 span {
-      display: block;
-      font-size: clamp(25px, 4vw, 38px);
-      letter-spacing: -1px;
-      margin-top: 14px;
-    }
-
-    .hero p {
-      max-width: 720px;
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: var(--navy);
+      color: white;
+      padding: 9px 12px;
+      border-radius: 8px;
+      cursor: pointer;
       font-size: 19px;
-      color: #526071;
-      margin-bottom: 32px;
     }
 
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
+    /* ================= GENERAL ================= */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-head {
+      max-width: 750px;
+      margin: 0 auto 48px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 11px;
+      font-weight: 900;
+      margin-bottom: 9px;
+    }
+
+    .section-head h2 {
+      color: var(--navy);
+      font-size: clamp(31px, 5vw, 46px);
+      line-height: 1.15;
+      margin-bottom: 13px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 15px;
     }
 
     .btn {
-      display: inline-block;
-      padding: 13px 22px;
-      border-radius: 8px;
-      font-weight: 700;
-      border: 1px solid #172033;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 21px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 800;
+      transition: 0.3s;
+      border: 1px solid transparent;
     }
 
     .btn-primary {
-      background: #172033;
-      color: #ffffff;
+      background: var(--navy);
+      color: white;
     }
 
-    .btn-secondary {
-      background: #ffffff;
-      color: #172033;
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background: #07111e;
     }
 
-    section {
-      padding: 80px 0;
+    .btn-gold {
+      background: var(--gold);
+      color: white;
     }
 
-    .section-heading {
-      max-width: 700px;
-      margin-bottom: 42px;
+    .btn-gold:hover {
+      transform: translateY(-2px);
     }
 
-    .section-heading h2 {
-      font-size: 38px;
-      margin-bottom: 12px;
-      letter-spacing: -1px;
+    .btn-outline {
+      border-color: var(--navy);
+      color: var(--navy);
+      background: transparent;
     }
 
-    .section-heading p {
-      color: #657184;
-      font-size: 17px;
+    .btn-outline:hover {
+      background: var(--navy);
+      color: white;
+    }
+
+    /* ================= HERO ================= */
+
+    .hero {
+      min-height: 720px;
+      display: flex;
+      align-items: center;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(199,154,59,0.16), transparent 28%),
+        linear-gradient(135deg, #faf8f2, #ffffff);
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .availability {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 14px;
+      border-radius: 30px;
+      background: #f1f8f3;
+      border: 1px solid #d6e9db;
+      color: var(--success);
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .availability::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: #35a853;
+      border-radius: 50%;
+    }
+
+    .hero h1 {
+      color: var(--navy);
+      font-size: clamp(47px, 7vw, 78px);
+      line-height: 1.02;
+      letter-spacing: -3px;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero h2 {
+      color: var(--navy2);
+      font-size: clamp(20px, 3vw, 29px);
+      line-height: 1.3;
+      margin-bottom: 19px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 680px;
+      font-size: 16px;
+      margin-bottom: 29px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-photo-area {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-photo {
+      width: min(390px, 92%);
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 35px;
+      border: 10px solid white;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-badge {
+      position: absolute;
+      bottom: 18px;
+      left: 2%;
+      background: white;
+      padding: 15px 19px;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    /* ================= ABOUT ================= */
+
+    .about {
+      background: white;
     }
 
     .about-grid {
       display: grid;
-      grid-template-columns: 1.3fr 1fr;
-      gap: 50px;
+      grid-template-columns: 0.75fr 1.25fr;
+      gap: 65px;
       align-items: center;
     }
 
-    .about-text p {
-      color: #526071;
-      margin-bottom: 18px;
-      font-size: 17px;
+    .about-image {
+      max-width: 390px;
+      width: 100%;
+      margin: auto;
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .about-content h3 {
+      color: var(--navy);
+      font-size: 30px;
+      margin-bottom: 14px;
+    }
+
+    .about-content p {
+      color: var(--muted);
+      margin-bottom: 15px;
+      font-size: 15px;
     }
 
     .skills {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 8px;
+      margin: 23px 0;
     }
 
     .skill {
-      background: #f2f4f7;
-      padding: 9px 13px;
-      border-radius: 6px;
-      font-size: 14px;
-      font-weight: 600;
+      padding: 7px 11px;
+      background: var(--cream);
+      border: 1px solid #eadfc7;
+      color: var(--navy2);
+      border-radius: 30px;
+      font-size: 11px;
+      font-weight: 800;
     }
 
+    .about-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    /* ================= SERVICES ================= */
+
     .services {
-      background: #f6f8fb;
+      background: var(--cream);
     }
 
     .service-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      gap: 19px;
     }
 
-    .card {
-      background: #ffffff;
-      border: 1px solid #e7ebf0;
+    .service-card {
+      background: white;
+      padding: 27px 23px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+      border-color: #e8d6aa;
+    }
+
+    .service-icon {
+      width: 47px;
+      height: 47px;
+      display: grid;
+      place-items: center;
       border-radius: 12px;
-      padding: 28px;
+      background: var(--gold-light);
+      font-size: 22px;
+      margin-bottom: 15px;
     }
 
-    .card h3 {
-      margin-bottom: 10px;
-      font-size: 20px;
+    .service-card h3 {
+      color: var(--navy);
+      font-size: 18px;
+      margin-bottom: 7px;
     }
 
-    .card p {
-      color: #647084;
+    .service-card p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* ================= FEATURED PROJECT ================= */
+
+    .featured {
+      background: var(--navy);
+      color: white;
+    }
+
+    .featured-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .featured .eyebrow {
+      color: #e2bd67;
+    }
+
+    .featured h2 {
+      font-size: clamp(38px, 5vw, 55px);
+      line-height: 1.05;
+      margin-bottom: 19px;
+    }
+
+    .featured h2 span {
+      color: #e2bd67;
+    }
+
+    .featured p {
+      color: #c5ccd5;
+      margin-bottom: 16px;
       font-size: 15px;
     }
 
-    .portfolio-grid {
+    .project-points {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9px;
+      margin: 23px 0;
+    }
+
+    .project-point {
+      padding: 11px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 10px;
+      color: #e1e5ea;
+      font-size: 12px;
+    }
+
+    .saffron-preview {
+      background: #f7f2e7;
+      border-radius: 24px;
+      padding: 10px;
+      box-shadow: 0 25px 65px rgba(0,0,0,0.25);
+    }
+
+    .saffron-inner {
+      min-height: 410px;
+      border-radius: 18px;
+      padding: 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(104,132,78,0.3), transparent 27%),
+        linear-gradient(135deg, #dce8c9, #f1d7a6);
+      color: #24371f;
+    }
+
+    .saffron-inner small {
+      letter-spacing: 2px;
+      font-weight: 900;
+      margin-bottom: 11px;
+    }
+
+    .saffron-inner h3 {
+      font-family: Georgia, serif;
+      font-size: 48px;
+      line-height: 1;
+      margin-bottom: 17px;
+    }
+
+    .saffron-inner p {
+      color: #4c5d45;
+    }
+
+    /* ================= MY WORK ================= */
+
+    .portfolio {
+      background: white;
+    }
+
+    .work-category {
+      margin-bottom: 65px;
+    }
+
+    .category-title {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+
+    .category-title h3 {
+      color: var(--navy);
+      font-size: 25px;
+    }
+
+    .category-line {
+      height: 1px;
+      background: var(--border);
+      flex: 1;
+    }
+
+    .work-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
 
-    .portfolio-card {
-      border: 1px solid #e7ebf0;
-      border-radius: 12px;
-      padding: 26px;
-      background: #ffffff;
+    .work-card {
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 7px 25px rgba(16,28,44,0.05);
+      transition: 0.3s;
     }
 
-    .portfolio-card h3 {
+    .work-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .work-visual {
+      min-height: 165px;
+      padding: 25px;
+      display: flex;
+      align-items: flex-end;
+      background: linear-gradient(135deg, #eef2f4, #f7f2e7);
+    }
+
+    .work-card:nth-child(2) .work-visual {
+      background: linear-gradient(135deg, #e6f0e9, #f5f0df);
+    }
+
+    .work-card:nth-child(3) .work-visual {
+      background: linear-gradient(135deg, #ece8f5, #f5edf4);
+    }
+
+    .work-card:nth-child(4) .work-visual {
+      background: linear-gradient(135deg, #e9eef8, #f6eadf);
+    }
+
+    .work-number {
+      font-size: 49px;
+      line-height: 1;
+      font-weight: 900;
+      color: rgba(16,28,44,0.13);
+    }
+
+    .work-content {
+      padding: 22px;
+    }
+
+    .work-content h4 {
+      color: var(--navy);
+      font-size: 18px;
+      margin-bottom: 7px;
+    }
+
+    .work-content p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 17px;
+    }
+
+    .work-link {
+      color: #96711f;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    /* ================= DOCUMENTS ================= */
+
+    .documents {
+      background: var(--cream);
+    }
+
+    .document-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 19px;
+    }
+
+    .document-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 27px;
+      text-align: center;
+    }
+
+    .document-icon {
+      font-size: 37px;
       margin-bottom: 10px;
     }
 
-    .portfolio-card p {
-      color: #647084;
-      margin-bottom: 15px;
+    .document-card h3 {
+      color: var(--navy);
+      font-size: 18px;
+      margin-bottom: 7px;
     }
 
-    .portfolio-link {
-      font-weight: 700;
-      font-size: 14px;
+    .document-card p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 17px;
     }
+
+    /* ================= REVIEWS ================= */
+
+    .reviews {
+      background: white;
+    }
+
+    .review-box {
+      max-width: 830px;
+      margin: auto;
+      padding: 35px;
+      background: var(--cream);
+      border: 1px solid #e9dfc9;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .review-box h3 {
+      color: var(--navy);
+      font-size: 25px;
+      margin-bottom: 9px;
+    }
+
+    .review-box p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .review-highlights {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 24px 0;
+    }
+
+    .review-highlight {
+      background: white;
+      padding: 17px 10px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .review-highlight strong {
+      display: block;
+      color: var(--navy);
+      margin-bottom: 3px;
+    }
+
+    .review-highlight span {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* ================= WHY ================= */
 
     .why {
-      background: #f6f8fb;
+      background: var(--navy);
+      color: white;
+    }
+
+    .why .section-head h2 {
+      color: white;
+    }
+
+    .why .section-head p {
+      color: #bfc7d0;
     }
 
     .why-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
     }
 
-    .why-item {
-      background: #ffffff;
+    .why-card {
+      padding: 25px 17px;
+      border-radius: 15px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.035);
+    }
+
+    .why-card strong {
+      display: block;
+      color: #e3bd68;
+      font-size: 17px;
+      margin-bottom: 7px;
+    }
+
+    .why-card p {
+      color: #c1c8d0;
+      font-size: 12px;
+    }
+
+    /* ================= CONTACT ================= */
+
+    .contact {
+      background: var(--cream);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 35px;
+      align-items: stretch;
+    }
+
+    .contact-info {
+      background: var(--navy);
+      color: white;
+      border-radius: 22px;
+      padding: 37px;
+    }
+
+    .contact-info .eyebrow {
+      color: #e3bd68;
+    }
+
+    .contact-info h2 {
+      font-size: 35px;
+      line-height: 1.15;
+      margin-bottom: 13px;
+    }
+
+    .contact-info > p {
+      color: #c4cbd3;
+      font-size: 14px;
+      margin-bottom: 27px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 13px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .contact-item-icon {
+      font-size: 20px;
+    }
+
+    .contact-item strong {
+      display: block;
+      font-size: 12px;
+      color: #aeb8c3;
+    }
+
+    .contact-item a {
+      font-size: 14px;
+      color: white;
+    }
+
+    .contact-form {
+      background: white;
+      border-radius: 22px;
+      padding: 37px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-form h3 {
+      color: var(--navy);
+      font-size: 27px;
+      margin-bottom: 20px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 13px;
+    }
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    .form-group label {
+      display: block;
+      color: var(--navy2);
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 11px 12px;
+      outline: none;
+      color: var(--text);
+      background: #fff;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--gold);
+    }
+
+    .form-group textarea {
+      min-height: 135px;
+      resize: vertical;
+    }
+
+    /* ================= LEGAL ================= */
+
+    .legal {
+      background: white;
+      border-top: 1px solid var(--border);
+    }
+
+    .legal-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .legal-card {
       padding: 25px;
-      border-radius: 10px;
-      border: 1px solid #e7ebf0;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      background: var(--cream);
     }
 
-    .why-item h3 {
+    .legal-card h3 {
+      color: var(--navy);
       margin-bottom: 8px;
       font-size: 18px;
     }
 
-    .why-item p {
-      color: #647084;
-      font-size: 14px;
+    .legal-card p {
+      color: var(--muted);
+      font-size: 12px;
     }
 
-    .contact {
-      text-align: center;
-      background: #172033;
-      color: #ffffff;
-    }
-
-    .contact .section-heading {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .contact .section-heading p {
-      color: #c9d0da;
-    }
-
-    .contact-buttons {
-      justify-content: center;
-    }
-
-    .contact .btn-secondary {
-      color: #172033;
-    }
+    /* ================= FOOTER ================= */
 
     footer {
-      background: #0e1420;
-      color: #c9d0da;
-      padding: 30px 0;
-      text-align: center;
-      font-size: 14px;
+      background: #09121f;
+      color: white;
+      padding: 48px 0 25px;
     }
 
-    footer p {
-      margin-bottom: 10px;
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      gap: 45px;
+      padding-bottom: 35px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    footer h3 {
+      margin-bottom: 12px;
+      color: white;
+    }
+
+    footer .footer-brand {
+      font-size: 25px;
+      font-weight: 900;
+    }
+
+    footer .footer-brand span {
+      color: #e3bd68;
+    }
+
+    footer p,
+    footer a {
+      color: #aab4c0;
+      font-size: 12px;
+    }
+
+    footer a:hover {
+      color: #e3bd68;
     }
 
     .footer-links {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 18px;
+      flex-direction: column;
+      gap: 6px;
     }
 
-    @media (max-width: 850px) {
-      .nav-links {
-        display: none;
-      }
+    .copyright {
+      text-align: center;
+      color: #788492;
+      font-size: 11px;
+      padding-top: 22px;
+    }
 
-      .about-grid {
+    /* ================= RESPONSIVE ================= */
+
+    @media (max-width: 1000px) {
+
+      .hero-grid,
+      .about-grid,
+      .featured-grid,
+      .contact-grid {
         grid-template-columns: 1fr;
       }
 
+      .hero-photo-area {
+        order: -1;
+      }
+
       .service-grid,
-      .portfolio-grid {
-        grid-template-columns: 1fr 1fr;
+      .work-grid,
+      .document-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .why-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .legal-grid {
         grid-template-columns: 1fr 1fr;
       }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
     }
 
-    @media (max-width: 600px) {
-      .hero {
-        padding: 70px 0;
-      }
+    @media (max-width: 700px) {
 
       section {
-        padding: 60px 0;
+        padding: 65px 0;
       }
 
-      .service-grid,
-      .portfolio-grid,
-      .why-grid {
-        grid-template-columns: 1fr;
+      .menu-btn {
+        display: block;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 76px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: white;
+        padding: 8px 6%;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 11px 0;
+      }
+
+      .nav-contact {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 65px 0;
       }
 
       .hero h1 {
-        letter-spacing: -1px;
+        letter-spacing: -2px;
       }
 
-      .hero p {
-        font-size: 17px;
+      .service-grid,
+      .work-grid,
+      .document-grid,
+      .why-grid,
+      .legal-grid {
+        grid-template-columns: 1fr;
       }
+
+      .project-points,
+      .review-highlights,
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .saffron-inner {
+        min-height: 320px;
+        padding: 30px;
+      }
+
+      .saffron-inner h3 {
+        font-size: 39px;
+      }
+
+      .contact-info,
+      .contact-form {
+        padding: 28px 22px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
     }
+
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Zoha Hassan",
+    "url": "https://zohahassan.com/",
+    "jobTitle": "Virtual Assistant and Digital Marketing Professional",
+    "email": "mailto:zohahassan009@gmail.com",
+    "telephone": "+923197366197",
+    "sameAs": [
+      "https://www.linkedin.com/in/zoha-hassan-001328433"
+    ],
+    "knowsAbout": [
+      "Virtual Assistance",
+      "Data Entry",
+      "Excel",
+      "Social Media Management",
+      "Gmail Management",
+      "WordPress",
+      "Web Development",
+      "Video Editing",
+      "SEO",
+      "Graphic Design",
+      "Customer Support",
+      "Online Research"
+    ]
+  }
+  </script>
+
 </head>
 
 <body>
 
-<header>
-  <div class="container navbar">
-    <a href="index.html" class="logo">Zoha Hassan</a>
+<!-- ================= HEADER ================= -->
 
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<header>
+  <div class="container nav">
+
+    <a href="#home" class="logo">
+      Zoha<span>.</span>
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation">
+      ☰
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact" class="nav-contact">Contact</a></li>
+    </ul>
+
   </div>
 </header>
 
+
+<!-- ================= HERO ================= -->
+
 <main>
 
-  <section class="hero">
-    <div class="container hero-content">
+<section class="hero" id="home">
+
+  <div class="container hero-grid">
+
+    <div>
 
       <div class="availability">
         Available for Remote Work
       </div>
 
       <h1>
-        Zoha Hassan
-        <span>Virtual Assistant | Digital Marketing & Creative Services</span>
+        Zoha <span>Hassan</span>
       </h1>
 
+      <h2>
+        Professional Remote Support for Growing Businesses
+      </h2>
+
       <p>
-        Helping businesses with reliable remote support, digital marketing,
-        creative solutions, and practical digital services.
+        Virtual Assistant, Digital Marketing and Creative Services Professional
+        helping businesses stay organized, manage digital tasks, strengthen their
+        online presence and create professional digital content.
       </p>
 
-      <div class="buttons">
-        <a href="#contact" class="btn btn-primary">Hire Me</a>
-        <a href="#portfolio" class="btn btn-secondary">View My Work</a>
-      </div>
+      <div class="hero-buttons">
 
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container about-grid">
-
-      <div class="about-text">
-        <div class="section-heading">
-          <h2>About Me</h2>
-          <p>Reliable support with digital, creative, and technical skills.</p>
-        </div>
-
-        <p>
-          I’m Zoha Hassan, a versatile digital professional providing
-          virtual assistance, data entry, digital marketing, social media
-          management, graphic design, video editing, SEO, content creation,
-          customer support, and web development services.
-        </p>
-
-        <p>
-          I focus on clear communication, attention to detail, creativity,
-          organization, and delivering practical solutions that help
-          businesses work more efficiently.
-        </p>
-
-        <div class="skills">
-          <span class="skill">Virtual Assistance</span>
-          <span class="skill">Data Entry</span>
-          <span class="skill">Digital Marketing</span>
-          <span class="skill">Social Media</span>
-          <span class="skill">Graphic Design</span>
-          <span class="skill">Video Editing</span>
-          <span class="skill">SEO</span>
-          <span class="skill">Content Creation</span>
-          <span class="skill">Customer Support</span>
-          <span class="skill">Web Development</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="services" class="services">
-    <div class="container">
-
-      <div class="section-heading">
-        <h2>Services</h2>
-        <p>
-          Professional remote services designed to support businesses
-          and entrepreneurs.
-        </p>
-      </div>
-
-      <div class="service-grid">
-
-        <div class="card">
-          <h3>Virtual Assistance</h3>
-          <p>Reliable remote administrative and business support.</p>
-        </div>
-
-        <div class="card">
-          <h3>Data Entry</h3>
-          <p>Accurate data entry, organization, spreadsheet and research work.</p>
-        </div>
-
-        <div class="card">
-          <h3>Digital Marketing</h3>
-          <p>Digital marketing support focused on visibility and business growth.</p>
-        </div>
-
-        <div class="card">
-          <h3>Social Media Management</h3>
-          <p>Content planning, posting and social media support.</p>
-        </div>
-
-        <div class="card">
-          <h3>Graphic Design</h3>
-          <p>Professional social media graphics, promotional designs and visual content.</p>
-        </div>
-
-        <div class="card">
-          <h3>Video Editing</h3>
-          <p>Short-form videos, promotional content and social media editing.</p>
-        </div>
-
-        <div class="card">
-          <h3>SEO</h3>
-          <p>Practical SEO support for better website structure and visibility.</p>
-        </div>
-
-        <div class="card">
-          <h3>Content Creation</h3>
-          <p>Engaging content for websites, social media and digital campaigns.</p>
-        </div>
-
-        <div class="card">
-          <h3>Web Development</h3>
-          <p>Professional, responsive websites and practical web solutions.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="portfolio">
-    <div class="container">
-
-      <div class="section-heading">
-        <h2>Featured Work</h2>
-        <p>
-          A selection of real projects and professional work.
-        </p>
-      </div>
-
-      <div class="portfolio-grid">
-
-        <div class="portfolio-card">
-          <h3>Saffron & Spice</h3>
-          <p>
-            A real website project developed as part of my web development work.
-          </p>
-          <span class="portfolio-link">Website Project</span>
-        </div>
-
-        <div class="portfolio-card">
-          <h3>Graphic Design</h3>
-          <p>
-            Social media graphics, promotional posters and digital designs.
-          </p>
-          <span class="portfolio-link">View Designs</span>
-        </div>
-
-        <div class="portfolio-card">
-          <h3>Video Editing</h3>
-          <p>
-            Short-form videos and promotional content created for digital platforms.
-          </p>
-          <span class="portfolio-link">View Videos</span>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <section class="why">
-    <div class="container">
-
-      <div class="section-heading">
-        <h2>Why Work With Me?</h2>
-        <p>
-          Professional qualities I bring to every project.
-        </p>
-      </div>
-
-      <div class="why-grid">
-
-        <div class="why-item">
-          <h3>Reliable</h3>
-          <p>Committed to completing tasks responsibly and professionally.</p>
-        </div>
-
-        <div class="why-item">
-          <h3>Detail-Oriented</h3>
-          <p>I pay attention to accuracy, organization and quality.</p>
-        </div>
-
-        <div class="why-item">
-          <h3>Creative</h3>
-          <p>I combine creative thinking with practical digital solutions.</p>
-        </div>
-
-        <div class="why-item">
-          <h3>Remote Ready</h3>
-          <p>Available to collaborate with businesses and teams remotely.</p>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="container">
-
-      <div class="section-heading">
-        <h2>Let's Work Together</h2>
-        <p>
-          Looking for reliable remote support or digital services?
-          I'd be happy to discuss your project.
-        </p>
-      </div>
-
-      <div class="buttons contact-buttons">
-        <a href="mailto:zohahassan009@gmail.com" class="btn btn-secondary">
-          Email Me
+        <a href="#contact" class="btn btn-primary">
+          Hire Me →
         </a>
 
-        <a href="https://wa.me/923197366197" class="btn btn-secondary">
-          WhatsApp
+        <a href="#portfolio" class="btn btn-outline">
+          Explore My Work
         </a>
+
       </div>
 
     </div>
-  </section>
 
-</main>
 
-<footer>
-  <div class="container">
+    <div class="hero-photo-area">
 
-    <p>© 2026 Zoha Hassan. All rights reserved.</p>
+      <img
+        src="professional-photo.png"
+        alt="Zoha Hassan - Professional Remote Digital Services"
+        class="hero-photo"
+      >
 
-    <div class="footer-links">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
+      <div class="hero-badge">
+        🌎 Remote & Freelance Professional
+      </div>
+
     </div>
 
   </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        About Me
+      </div>
+
+      <h2>
+        A Versatile Digital Professional
+      </h2>
+
+      <p>
+        Administrative support, digital marketing, creative work and technical skills —
+        combined in one professional service profile.
+      </p>
+
+    </div>
+
+
+    <div class="about-grid">
+
+      <div>
+
+        <img
+          src="professional-photo.png"
+          alt="Zoha Hassan professional profile"
+          class="about-image"
+        >
+
+      </div>
+
+
+      <div class="about-content">
+
+        <h3>
+          Hi, I'm Zoha Hassan.
+        </h3>
+
+        <p>
+          I’m a versatile digital professional with hands-on experience in
+          virtual assistance, data entry, digital marketing, social media
+          management, graphic design, video editing, SEO, content creation,
+          customer support and web development.
+        </p>
+
+        <p>
+          I help businesses stay organized, build a stronger online presence,
+          and manage digital tasks efficiently. From administrative and data
+          work to content, social media, websites and marketing support, I focus
+          on reliable and practical solutions.
+        </p>
+
+        <p>
+          My professional approach is based on reliability, clear communication,
+          attention to detail, creativity and continuous learning. I take every
+          project seriously and aim to understand the actual business need before
+          delivering a solution.
+        </p>
+
+        <div class="skills">
+
+          <span class="skill">Virtual Assistance</span>
+          <span class="skill">Data Entry</span>
+          <span class="skill">Excel</span>
+          <span class="skill">Digital Marketing</span>
+          <span class="skill">Social Media</span>
+          <span class="skill">Gmail Management</span>
+          <span class="skill">WordPress</span>
+          <span class="skill">Web Development</span>
+          <span class="skill">Video Editing</span>
+          <span class="skill">SEO</span>
+          <span class="skill">Graphic Design</span>
+          <span class="skill">Customer Support</span>
+          <span class="skill">Online Research</span>
+
+        </div>
+
+        <div class="about-actions">
+
+          <a
+            href="Zoha_CV_090116.pdf"
+            target="_blank"
+            class="btn btn-primary"
+          >
+            View My CV
+          </a>
+
+          <a
+            href="About_me.pdf"
+            target="_blank"
+            class="btn btn-outline"
+          >
+            Full Profile
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services" id="services">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        Services
+      </div>
+
+      <h2>
+        Professional Services for Remote Businesses
+      </h2>
+
+      <p>
+        Flexible digital support across administrative, marketing, creative and technical tasks.
+      </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+
+      <div class="service-card">
+        <div class="service-icon">💼</div>
+        <h3>Virtual Assistant</h3>
+        <p>
+          Reliable remote administrative and digital support to keep everyday
+          business operations organized.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">📊</div>
+        <h3>Data Entry & Excel</h3>
+        <p>
+          Accurate data entry, spreadsheet management, organization, data cleaning
+          and Excel-based work.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <h3>Social Media Management</h3>
+        <p>
+          Social media support, content planning and digital communication for
+          stronger online presence.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">📧</div>
+        <h3>Gmail Management</h3>
+        <p>
+          Email organization, inbox support, communication assistance and routine
+          email management.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">🌐</div>
+        <h3>WordPress</h3>
+        <p>
+          WordPress website support, content updates and basic website management.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <h3>Web Development</h3>
+        <p>
+          Clean, responsive and user-friendly websites designed for modern
+          business and portfolio needs.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">🎬</div>
+        <h3>Video Editing</h3>
+        <p>
+          Engaging video editing, promotional visuals, text effects and short-form
+          digital content.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">🔎</div>
+        <h3>SEO</h3>
+        <p>
+          SEO support, keyword research and search-focused content and website
+          optimization.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <h3>Poster Designing</h3>
+        <p>
+          Professional posters and promotional graphics for businesses, brands
+          and digital platforms.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">🤝</div>
+        <h3>Customer Support</h3>
+        <p>
+          Clear and professional customer communication and support assistance.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">🔬</div>
+        <h3>Online Research</h3>
+        <p>
+          Organized online research for business projects, information gathering,
+          content and digital tasks.
+        </p>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SAFFRON & SPICE ================= -->
+
+<section class="featured" id="saffron">
+
+  <div class="container featured-grid">
+
+    <div>
+
+      <div class="eyebrow">
+        Featured Website Project
+      </div>
+
+      <h2>
+        Saffron <span>&</span> Spice
+      </h2>
+
+      <p>
+        A recipe and cooking website project designed around Pakistani food,
+        recipes and practical cooking inspiration.
+      </p>
+
+      <p>
+        The website presents recipe categories, recipe content, cooking ideas,
+        blog-style content, About Us and Contact sections in a clean,
+        user-friendly structure.
+      </p>
+
+      <div class="project-points">
+
+        <div class="project-point">🍛 Pakistani Recipes</div>
+        <div class="project-point">🍰 Desserts & Baking</div>
+        <div class="project-point">🍳 Breakfast & Lunch</div>
+        <div class="project-point">📖 Recipes & Blog</div>
+        <div class="project-point">💡 Cooking Tips</div>
+        <div class="project-point">📱 Responsive Website</div>
+
+      </div>
+
+      <a
+        href="https://zohahassan009-dot.github.io/"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-gold"
+      >
+        Visit Saffron & Spice →
+      </a>
+
+    </div>
+
+
+    <div class="saffron-preview">
+
+      <div class="saffron-inner">
+
+        <small>
+          PAKISTANI RECIPES
+        </small>
+
+        <h3>
+          Saffron<br>& Spice
+        </h3>
+
+        <p>
+          Recipes, cooking inspiration, desserts, baking and practical ideas
+          presented through a dedicated food website.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= MY WORK ================= -->
+
+<section class="portfolio" id="portfolio">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        My Work
+      </div>
+
+      <h2>
+        Selected Projects & Work Samples
+      </h2>
+
+      <p>
+        Explore my website development, video editing, graphic design,
+        company work, data and digital marketing projects.
+      </p>
+
+    </div>
+
+
+    <!-- WEBSITE WORK -->
+
+    <div class="work-category">
+
+      <div class="category-title">
+        <h3>🌐 Website Design & Development</h3>
+        <div class="category-line"></div>
+      </div>
+
+      <div class="work-grid">
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">01</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>Organic Food Website</h4>
+
+            <p>
+              A clean organic-food website concept featuring product sections,
+              natural branding, navigation and promotional content.
+            </p>
+
+            <a
+              href="websites_portfolio.pdf"
+              target="_blank"
+              class="work-link"
+            >
+              View Website Portfolio PDF →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">02</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>Online Bakery Website</h4>
+
+            <p>
+              A visually engaging bakery website concept with products,
+              categories, offers, ordering elements and promotional sections.
+            </p>
+
+            <a
+              href="websites_portfolio.pdf"
+              target="_blank"
+              class="work-link"
+            >
+              View Project PDF →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">03</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>WebCraft Business Website</h4>
+
+            <p>
+              A modern web-development business concept focused on responsive,
+              SEO-friendly and user-friendly websites.
+            </p>
+
+            <a
+              href="websites_portfolio.pdf"
+              target="_blank"
+              class="work-link"
+            >
+              View Project PDF →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">04</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>Saffron & Spice</h4>
+
+            <p>
+              A live recipe website project focused on Pakistani food, recipes,
+              cooking categories and helpful cooking content.
+            </p>
+
+            <a
+              href="https://zohahassan009-dot.github.io/"
+              target="_blank"
+              class="work-link"
+            >
+              Visit Live Website →
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <!-- VIDEO WORK -->
+
+    <div class="work-category">
+
+      <div class="category-title">
+        <h3>🎬 Video Editing</h3>
+        <div class="category-line"></div>
+      </div>
+
+      <div class="work-grid">
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">01</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>Visual Search Animation</h4>
+
+            <p>
+              Short-form visual editing using typography and a magnifying-glass
+              concept to create attention and visual curiosity.
+            </p>
+
+            <a href="video_editing_engaging.pdf" target="_blank" class="work-link">
+              View Video Work →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">02</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>Website Development Promo</h4>
+
+            <p>
+              Promotional video concept presenting modern, fast and mobile-friendly
+              website development.
+            </p>
+
+            <a href="video_editing_engaging.pdf" target="_blank" class="work-link">
+              View Video Work →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">03</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>Technology Promotional Edit</h4>
+
+            <p>
+              Short promotional visual built around clean typography and technology
+              branding for digital communication.
+            </p>
+
+            <a href="video_editing_engaging.pdf" target="_blank" class="work-link">
+              View Video Work →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">04</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>Packaging Design Explainer</h4>
+
+            <p>
+              Concept video combining packaging-design visuals with a 2D explainer
+              style for professional presentation.
+            </p>
+
+            <a href="video_editing_engaging.pdf" target="_blank" class="work-link">
+              View Video Work →
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <!-- COMPANY WORK -->
+
+    <div class="work-category">
+
+      <div class="category-title">
+        <h3>📊 Company, Data & Analytics Work</h3>
+        <div class="category-line"></div>
+      </div>
+
+      <div class="work-grid">
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">01</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>Excel Data & Cash Records</h4>
+
+            <p>
+              Spreadsheet work involving organized financial-style records,
+              cash details and structured Excel data.
+            </p>
+
+            <a href="company_work.pdf" target="_blank" class="work-link">
+              View Company Work →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">02</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>Budget Tracker</h4>
+
+            <p>
+              Spreadsheet-based budgeting work with expected, actual and difference
+              values presented through organized tables and charts.
+            </p>
+
+            <a href="company_work.pdf" target="_blank" class="work-link">
+              View Company Work →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">03</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>Data Analysis</h4>
+
+            <p>
+              Structured spreadsheet data with statistical values, tables and
+              organized datasets for analysis.
+            </p>
+
+            <a href="company_work.pdf" target="_blank" class="work-link">
+              View Company Work →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">04</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>Social Media Analytics</h4>
+
+            <p>
+              Audience insights, engagement information and platform performance
+              analytics presented through professional dashboards.
+            </p>
+
+            <a href="company_work.pdf" target="_blank" class="work-link">
+              View Company Work →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">05</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>Search Performance Analysis</h4>
+
+            <p>
+              Search-performance data including clicks, impressions, CTR and
+              average-position insights.
+            </p>
+
+            <a href="company_work.pdf" target="_blank" class="work-link">
+              View Company Work →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">06</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>SEO Keyword Research</h4>
+
+            <p>
+              Keyword research and organization work involving search volume,
+              review keywords and low-competition keyword identification.
+            </p>
+
+            <a href="company_work.pdf" target="_blank" class="work-link">
+              View Company Work →
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <!-- GRAPHIC DESIGN -->
+
+    <div class="work-category">
+
+      <div class="category-title">
+        <h3>🎨 Graphic Design & Digital Marketing</h3>
+        <div class="category-line"></div>
+      </div>
+
+      <div class="work-grid">
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">01</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>Data Anchor Service</h4>
+
+            <p>
+              Professional data-entry promotional design highlighting data
+              management, accuracy, organization and spreadsheet support.
+            </p>
+
+            <a href="posters_samples.pdf" target="_blank" class="work-link">
+              View Poster Portfolio →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">02</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>Brand Promotion</h4>
+
+            <p>
+              Brand-promotion design covering social media branding, visual
+              identity, strategy, content and paid campaign concepts.
+            </p>
+
+            <a href="posters_samples.pdf" target="_blank" class="work-link">
+              View Poster Portfolio →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">03</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>Campaign Work</h4>
+
+            <p>
+              Digital campaign design covering social media campaigns, strategy,
+              advertising, audience targeting and performance-focused content.
+            </p>
+
+            <a href="posters_samples.pdf" target="_blank" class="work-link">
+              View Poster Portfolio →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">04</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>Web Developer Promotion</h4>
+
+            <p>
+              Professional promotional graphic presenting responsive websites,
+              WordPress, e-commerce, website redesign and modern web solutions.
+            </p>
+
+            <a href="posters_samples.pdf" target="_blank" class="work-link">
+              View Poster Portfolio →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">05</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>Blog Writing & Articles</h4>
+
+            <p>
+              Content-writing design focused on researched articles, SEO content,
+              website content, social media articles and editing.
+            </p>
+
+            <a href="posters_samples.pdf" target="_blank" class="work-link">
+              View Poster Portfolio →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="work-card">
+
+          <div class="work-visual">
+            <div class="work-number">06</div>
+          </div>
+
+          <div class="work-content">
+
+            <h4>Creative Poster Collection</h4>
+
+            <p>
+              Original professional poster designs created for digital services,
+              marketing communication and business promotion.
+            </p>
+
+            <a href="posters_samples.pdf" target="_blank" class="work-link">
+              View All Posters →
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+<!-- ================= PORTFOLIO DOCUMENTS ================= -->
+
+<section class="documents">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        Complete Portfolio
+      </div>
+
+      <h2>
+        View My Portfolio Documents
+      </h2>
+
+      <p>
+        Detailed PDF collections of my work and professional profile.
+      </p>
+
+    </div>
+
+
+    <div class="document-grid">
+
+
+      <div class="document-card">
+
+        <div class="document-icon">🌐</div>
+
+        <h3>
+          Websites Portfolio
+        </h3>
+
+        <p>
+          Three selected website design and development samples.
+        </p>
+
+        <a href="websites_portfolio.pdf" target="_blank" class="btn btn-outline">
+          Open PDF
+        </a>
+
+      </div>
+
+
+      <div class="document-card">
+
+        <div class="document-icon">🎬</div>
+
+        <h3>
+          Video Editing
+        </h3>
+
+        <p>
+          Four selected video editing and engaging visual samples.
+        </p>
+
+        <a href="video_editing_engaging.pdf" target="_blank" class="btn btn-outline">
+          Open PDF
+        </a>
+
+      </div>
+
+
+      <div class="document-card">
+
+        <div class="document-icon">📊</div>
+
+        <h3>
+          Company Work
+        </h3>
+
+        <p>
+          Data, Excel, analytics, SEO and performance work samples.
+        </p>
+
+        <a href="company_work.pdf" target="_blank" class="btn btn-outline">
+          Open PDF
+        </a>
+
+      </div>
+
+
+      <div class="document-card">
+
+        <div class="document-icon">🎨</div>
+
+        <h3>
+          Posters & Design
+        </h3>
+
+        <p>
+          Original graphic design and digital marketing poster samples.
+        </p>
+
+        <a href="posters_samples.pdf" target="_blank" class="btn btn-outline">
+          Open PDF
+        </a>
+
+      </div>
+
+
+      <div class="document-card">
+
+        <div class="document-icon">💬</div>
+
+        <h3>
+          Customer Reviews
+        </h3>
+
+        <p>
+          A complete collection of selected client feedback and testimonials.
+        </p>
+
+        <a href="Customer_Reviews.pdf" target="_blank" class="btn btn-outline">
+          View Reviews
+        </a>
+
+      </div>
+
+
+      <div class="document-card">
+
+        <div class="document-icon">📄</div>
+
+        <h3>
+          Professional Profile
+        </h3>
+
+        <p>
+          About Me, professional introduction, services and remote-work profile.
+        </p>
+
+        <a href="About_me.pdf" target="_blank" class="btn btn-outline">
+          View Profile
+        </a>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= REVIEWS ================= -->
+
+<section class="reviews" id="reviews">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        Client Feedback
+      </div>
+
+      <h2>
+        Real Customer Reviews
+      </h2>
+
+      <p>
+        Selected feedback from client conversations and previous work.
+      </p>
+
+    </div>
+
+
+    <div class="review-box">
+
+      <h3>
+        Client Feedback Collection
+      </h3>
+
+      <p>
+        The review portfolio contains 10 selected customer-review examples,
+        including feedback about communication, support, work quality,
+        satisfaction, guidance and project outcomes.
+      </p>
+
+      <div class="review-highlights">
+
+        <div class="review-highlight">
+          <strong>10</strong>
+          <span>Review Samples</span>
+        </div>
+
+        <div class="review-highlight">
+          <strong>Client</strong>
+          <span>Feedback</span>
+        </div>
+
+        <div class="review-highlight">
+          <strong>Work</strong>
+          <span>Quality & Support</span>
+        </div>
+
+      </div>
+
+      <a
+        href="Customer_Reviews.pdf"
+        target="_blank"
+        class="btn btn-primary"
+      >
+        View All Customer Reviews →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= WHY WORK WITH ME ================= -->
+
+<section class="why">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        Why Work With Me
+      </div>
+
+      <h2>
+        Professional Support You Can Rely On
+      </h2>
+
+      <p>
+        My goal is to provide dependable remote support while continuously
+        improving my skills and delivering work responsibly.
+      </p>
+
+    </div>
+
+
+    <div class="why-grid">
+
+
+      <div class="why-card">
+
+        <strong>
+          Reliable
+        </strong>
+
+        <p>
+          I take responsibilities seriously and focus on dependable professional support.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <strong>
+          Professional
+        </strong>
+
+        <p>
+          I approach projects with clear communication and a professional mindset.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <strong>
+          Detail-Oriented
+        </strong>
+
+        <p>
+          I pay attention to accuracy, organization and project requirements.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <strong>
+          Fast Learner
+        </strong>
+
+        <p>
+          I continuously learn new tools, skills and digital workflows.
+        </p>
+
+      </div>
+
+
+      <div class="why-card">
+
+        <strong>
+          Timely Delivery
+        </strong>
+
+        <p>
+          I value deadlines and aim to complete assigned work responsibly.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="eyebrow">
+        Contact Us
+      </div>
+
+      <h2>
+        Let's Work Together
+      </h2>
+
+      <p>
+        Looking for dependable remote support? Send me a message and let's discuss
+        how I can help with your project.
+      </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+      <div class="contact-info">
+
+        <div class="eyebrow">
+          Get In Touch
+        </div>
+
+        <h2>
+          Let's discuss your next project.
+        </h2>
+
+        <p>
+          Available for remote work, freelance opportunities and professional
+          collaborations worldwide.
+        </p>
+
+
+        <div class="contact-item">
+
+          <div class="contact-item-icon">
+            ✉️
+          </div>
+
+          <div>
+            <strong>Email</strong>
+
+            <a href="mailto:zohahassan009@gmail.com">
+              zohahassan009@gmail.com
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+          <div class="contact-item-icon">
+            💬
+          </div>
+
+          <div>
+            <strong>WhatsApp / Text / Call</strong>
+
+            <a href="https://wa.me/923197366197" target="_blank">
+              +92 319 7366197
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+          <div class="contact-item-icon">
+            💼
+          </div>
+
+          <div>
+            <strong>LinkedIn</strong>
+
+            <a
+              href="https://www.linkedin.com/in/zoha-hassan-001328433"
+              target="_blank"
+            >
+              View LinkedIn Profile
+            </a>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="contact-form">
+
+        <h3>
+          Send a Message
+        </h3>
+
+        <form onsubmit="sendEmail(event)">
+
+          <div class="form-row">
+
+            <div class="form-group">
+
+              <label for="name">
+                Your Name
+              </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="email">
+                Your Email
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              >
+
+            </div>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="subject">
+              Subject
+            </label>
+
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="What would you like to discuss?"
+              required
+            >
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="message">
+              Message
+            </label>
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+
+          </div>
+
+
+          <button
+            type="submit"
+            class="btn btn-primary"
+          >
+            Send Message →
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= LEGAL ================= -->
+
+<section class="legal">
+
+  <div class="container">
+
+    <div class="legal-grid">
+
+
+      <div class="legal-card" id="privacy">
+
+        <h3>
+          Privacy Policy
+        </h3>
+
+        <p>
+          This website is a professional portfolio for Zoha Hassan. Information
+          submitted through the contact form is intended only for responding to
+          project and professional inquiries. No information is intentionally
+          sold or shared for unrelated purposes.
+        </p>
+
+      </div>
+
+
+      <div class="legal-card" id="disclaimer">
+
+        <h3>
+          Disclaimer
+        </h3>
+
+        <p>
+          Portfolio materials presented on this website are provided to showcase
+          selected work samples and professional capabilities. Results and
+          outcomes may vary depending on project requirements and circumstances.
+        </p>
+
+      </div>
+
+
+      <div class="legal-card" id="terms">
+
+        <h3>
+          Terms and Conditions
+        </h3>
+
+        <p>
+          Project scope, deadlines, revisions, communication and deliverables
+          should be agreed upon before work begins. Each project is handled
+          according to its specific requirements and agreed terms.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+
+      <div>
+
+        <div class="footer-brand">
+          Zoha<span>.</span>
+        </div>
+
+        <p style="margin-top:10px;">
+          Virtual Assistant | Digital Marketing & Creative Services Professional.
+        </p>
+
+        <p style="margin-top:9px;">
+          Available for remote work, freelance opportunities and professional
+          collaborations worldwide.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Quick Links
+        </h3>
+
+        <div class="footer-links">
+
+          <a href="#home">Home</a>
+          <a href="#about">About Me</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          Legal & Contact
+        </h3>
+
+        <div class="footer-links">
+
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#disclaimer">Disclaimer</a>
+          <a href="#terms">Terms and Conditions</a>
+          <a href="mailto:zohahassan009@gmail.com">Email Me</a>
+          <a href="https://wa.me/923197366197" target="_blank">WhatsApp</a>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 Zoha Hassan. All rights reserved.
+
+    </div>
+
+  </div>
+
 </footer>
+
+
+<script>
+
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+
+
+  document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+      document.getElementById("navLinks").classList.remove("active");
+
+    });
+
+  });
+
+
+  function sendEmail(event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    const body =
+      "Name: " + name +
+      "\nEmail: " + email +
+      "\n\nMessage:\n" + message;
+
+    const mailto =
+      "mailto:zohahassan009@gmail.com" +
+      "?subject=" + encodeURIComponent(subject) +
+      "&body=" + encodeURIComponent(body);
+
+    window.location.href = mailto;
+
+  }
+
+</script>
 
 </body>
 </html>
