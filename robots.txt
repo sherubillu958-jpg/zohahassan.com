@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sherubillu958-jpg.github.io/zohahassan.com/sitemap.xml
